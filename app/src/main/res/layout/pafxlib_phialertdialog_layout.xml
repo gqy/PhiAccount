@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fxlib_phialertdialog_parentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingLeft="@dimen/fxlib_phialertdialog_paddingleft"
+    android:paddingRight="@dimen/fxlib_phialertdialog_paddingright"
+    >
+    <LinearLayout
+        android:id="@+id/fxlib_phialertdialog_pcenterPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/fxlib_phialertdialog_topPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/fxlib_phialertdialog_title_template"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:padding="0dp"
+                android:background="@drawable/pafxlib_phialertdialog_title_bg_no_divide_line"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fxlib_phialertdialog_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/fxlib_phialertdialog_alertTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textColor="#2a2a2a"
+                    android:ellipsize="end"
+                     />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fxlib_phialertdialog_contentPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="beginning"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/fxlib_phialertdialog_scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="72dp">
+
+               <TextView
+                    android:id="@+id/fxlib_phialertdialog_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:paddingStart="16dip"
+                    android:paddingEnd="16dip"
+                    android:paddingTop="8dip"
+                    android:paddingBottom="8dip"
+                    android:textColor="#2a2a2a" />
+            </ScrollView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fxlib_phialertdialog_customPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pafxlib_phialertdialog_mid_bg"
+            android:layout_weight="1" >
+
+            <FrameLayout
+                android:id="@+id/fxlib_phialertdialog_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/fxlib_phialertdialog_buttonPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:divider="@drawable/pafxlib_phialertdialog_divide_line"
+                android:showDividers="middle"
+                android:dividerPadding="1dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/fxlib_phialertdialog_button2"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:typeface="sans"
+                    android:textSize="16dp"
+                    android:background="@drawable/pafxlib_phialertdialog_btn_left_bg"
+                    android:textColor="@drawable/pafxlib_phialertdialog_btn_textcolor_selector"
+                     />
+
+                <Button
+                    android:id="@+id/fxlib_phialertdialog_button3"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:typeface="sans"
+                    android:textSize="16dp"
+                    android:background="@drawable/pafxlib_phialertdialog_btn_middle_bg"
+                    android:textColor="@drawable/pafxlib_phialertdialog_btn_textcolor_selector"
+                     />
+
+                <Button
+                    android:id="@+id/fxlib_phialertdialog_button1"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:typeface="sans"
+                    android:textSize="16dp"
+                    android:background="@drawable/pafxlib_phialertdialog_btn_right_bg"
+                    android:textColor="@drawable/pafxlib_phialertdialog_btn_textcolor_selector"
+                     />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

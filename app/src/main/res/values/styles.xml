@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomAppTheme" parent="AppTheme">
+
+    </style>
+
+    <style name="TitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:textSize">@dimen/title_textsize</item>
+        <item name="android:textColor">@drawable/paapp_title_text_bg</item>
+    </style>
+
+    <style name="alertdialog_theme_alert" parent="android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="fxlib_phialertdialog_insert_style_animation">
+        <item name="android:windowEnterAnimation">@anim/pafxlib_phialertdialog_enter_animation_default</item>
+        <item name="android:windowExitAnimation">@anim/pafxlib_phialertdialog_exit_animation_default</item>
+    </style>
+    <style name="fxlib_phialertdialog_insert_style_without_exit_animation">
+        <item name="android:windowEnterAnimation">@anim/pafxlib_phialertdialog_enter_animation_default</item>
+    </style>
+
+</resources>

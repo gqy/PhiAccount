@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">斐讯账号</string>
+    <string name="account_title">斐讯帐号</string>
+    <string name="account_name">姓名</string>
+    <string name="pa_exit_account">退出登录</string>
+
+    <string name="pa_exit_accout_hint">你确定要退出当前账号吗？\n以下应用也将退出账号：\n\n●橙子市场\n●轻客运动\n●斐讯云服务</string>
+    <string name="pa_ok">确定</string>
+    <string name="pa_cancel">取消</string>
+    <string name="set_head">设置头像</string>
+    <string-array name="set_head_item">
+        <item>拍照</item>
+        <item>选择本地图片</item>
+    </string-array>
+    <string name="installFxCloud">请安装斐讯云同步</string>
+    <string name="installSports">请安装轻客运动</string>
+    <string name="installMarket">请安装橙子市场</string>
+    <string name="jumpThird">跳转至三方绑定界面</string>
+    <string name="buttonAgain">再按一次后退键退出程序</string>
+</resources>

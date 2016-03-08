@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg">
+
+    <RelativeLayout
+        android:id="@+id/title_simple"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Title_Height"
+        android:background="@drawable/patitle_bar_bg"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TitleStyle"
+            android:text="@string/account_title" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_simple"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <!-- portrait area-->
+        <LinearLayout
+            android:id="@+id/heat_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.feixun.phiaccount.tools.PaRippleLayout
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                app:rippleAlpha="0.2"
+                app:rippleColor="#585858"
+                app:rippleDelayClick="false"
+                app:rippleHover="true"
+                app:rippleOverlay="true"
+                app:rippleRoundedCorners="180dp">
+
+                <ImageView
+                    android:id="@+id/portrait"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/pahead_ripple_dark_bg" />
+            </com.feixun.phiaccount.tools.PaRippleLayout>
+
+            <TextView
+                android:id="@+id/account_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="@string/account_name"
+                android:textColor="@color/title_text_color"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            android:text="斐讯服务"
+            android:textColor="@color/grey_text"
+            android:textSize="14dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/divide_color" />
+            <!-- fxcloud-->
+            <RelativeLayout
+                android:id="@+id/application_fxcloud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/paripple_list_bg"
+                android:clickable="true"
+                android:minHeight="48dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="斐讯云同步"
+                    android:textColor="@color/black_text"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/paicon_back_to_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/divide_color" />
+            <!-- fxcloud-->
+            <RelativeLayout
+                android:id="@+id/application_sport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/paripple_list_bg"
+                android:clickable="true"
+                android:minHeight="48dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="轻客运动"
+                    android:textColor="@color/black_text"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/paicon_back_to_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/divide_color" />
+            <!-- fxcloud-->
+            <RelativeLayout
+                android:id="@+id/application_market"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/paripple_list_bg"
+                android:clickable="true"
+                android:minHeight="48dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="橙子市场"
+                    android:textColor="@color/black_text"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/paicon_back_to_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/divide_color" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            android:text="帐号设置"
+            android:textColor="@color/grey_text"
+            android:textSize="14dp"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_line_height"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/divide_color" />
+        <RelativeLayout
+            android:id="@+id/bind_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/paripple_list_bg"
+            android:clickable="true"
+            android:minHeight="48dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="帐号绑定"
+                android:textColor="@color/black_text"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/paicon_back_to_right" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_line_height"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/divide_color" />
+
+    </LinearLayout>
+    <!-- change password & exit account-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/exit_account_bt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/palogin_out_btn_bg"
+            android:text="@string/pa_exit_account"
+            android:textColor="@color/white_text"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

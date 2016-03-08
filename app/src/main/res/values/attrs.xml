@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomCircleProgressView">
+
+        <attr name="outerCircleColor" format="color" />
+        <attr name="outerProgressCircleColor" format="color" />
+        <attr name="middleCircleColor" format="color" />
+        <attr name="innerCircleColor" format="color" />
+        <attr name="innerProgressColor" format="color" />
+        <attr name="outerCircleRadius" format="dimension" />
+        <attr name="outerCircleStrokeWidth" format="dimension" />
+
+    </declare-styleable>
+
+    <declare-styleable name="RippleButton">
+        <attr name="duration" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="switch_TextAppearance">
+        <attr name="textColor" format="color" />
+        <!-- Size of the text. Recommended dimension type for text is "sp" for scaled-pixels (example: 15sp). -->
+        <attr name="textSize" format="dimension" />
+        <!-- Style (bold, italic, bolditalic) for the text. -->
+        <attr name="textStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <!-- Typeface (normal, sans, serif, monospace) for the text. -->
+        <attr name="typeface">
+            <enum name="normal" value="0" />
+            <enum name="sans" value="1" />
+            <enum name="serif" value="2" />
+            <enum name="monospace" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ScollMark">
+        <attr name="bgcolor" format="color"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="stripwidth" format="dimension"/>
+        <attr name="stripheight" format="dimension"/>
+        <attr name="stripLenght" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="PaRippleLayout">
+        <attr name="rippleColor" format="color" localization="suggested" />
+        <attr name="rippleDimension" format="dimension" localization="suggested" />
+        <attr name="rippleOverlay" format="boolean" localization="suggested" />
+        <attr name="rippleAlpha" format="float" localization="suggested" />
+        <attr name="rippleDuration" format="integer" localization="suggested" />
+        <attr name="rippleFadeDuration" format="integer" localization="suggested" />
+        <attr name="rippleHover" format="boolean" localization="suggested" />
+        <attr name="rippleBackground" format="color" localization="suggested" />
+        <attr name="rippleDelayClick" format="boolean" localization="suggested" />
+        <attr name="ripplePersistent" format="boolean" localization="suggested" />
+        <attr name="rippleInAdapter" format="boolean" localization="suggested" />
+        <attr name="rippleRoundedCorners" format="dimension" localization="suggested" />
+    </declare-styleable>
+</resources>
